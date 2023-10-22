@@ -7,7 +7,7 @@ const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.get("/", (req: Request, res: Response) => {
-    res.send("Examle Express Server");
+    res.send("Example Express Server");
 });
 
 app.get("/__health", (req: Request, res: Response) => {
