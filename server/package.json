@@ -2,12 +2,12 @@
     "name": "example-mern-server",
     "version": "1.0.0",
     "description": "Test the MERN stack",
-    "main": "./build/index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "build": "tsc",
         "test": "pnpm build",
         "pre:start": "pnpm build",
-        "start": "pnpm pre:start && node build/index.js"
+        "start": "pnpm pre:start && node dist/index.js"
     },
     "author": "Josh Wedekind",
     "license": "UNLICENSED",
