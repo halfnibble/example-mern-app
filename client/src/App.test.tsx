@@ -1,8 +1,8 @@
 import React from "react";
 import { render, act, waitFor, screen } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect"; // Add this line
-import App from "./App";
 import axios from "axios";
+
+import App from "./App";
 
 jest.mock("axios", () => ({
     post: jest.fn(),
