@@ -20,8 +20,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "types": [
-      "jest",
       "node",
+      "jest",
       "@testing-library/jest-dom"
     ]
   },

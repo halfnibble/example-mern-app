@@ -15,6 +15,7 @@ specifiers:
   '@types/node': ^16.18.59
   '@types/react': ^18.2.31
   '@types/react-dom': ^18.2.14
+  '@types/testing-library__jest-dom': ^6.0.0
   axios: ^1.5.1
   babel-jest: ^29.7.0
   pnpm: ^8.9.2
@@ -25,7 +26,6 @@ specifiers:
   web-vitals: ^2.1.4
 
 dependencies:
-  '@testing-library/jest-dom': 5.17.0
   '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
   '@testing-library/user-event': 13.5.0_@testing-library+dom@9.3.3
   '@types/node': 16.18.59
@@ -47,7 +47,9 @@ devDependencies:
   '@babel/preset-env': 7.23.2_@babel+core@7.23.2
   '@babel/preset-react': 7.22.15_@babel+core@7.23.2
   '@testing-library/dom': 9.3.3
+  '@testing-library/jest-dom': 5.17.0
   '@types/jest': 27.5.2
+  '@types/testing-library__jest-dom': 6.0.0
   babel-jest: 29.7.0_@babel+core@7.23.2
 
 packages:
@@ -59,7 +61,7 @@ packages:
 
   /@adobe/css-tools/4.3.1:
     resolution: {integrity: sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==}
-    dev: false
+    dev: true
 
   /@alloc/quick-lru/5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -2246,7 +2248,7 @@ packages:
       dom-accessibility-api: 0.5.16
       lodash: 4.17.21
       redent: 3.0.0
-    dev: false
+    dev: true
 
   /@testing-library/react/13.4.0_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==}
@@ -2413,6 +2415,7 @@ packages:
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
+    dev: true
 
   /@types/json-schema/7.0.14:
     resolution: {integrity: sha512-U3PUjAudAdJBeC2pgN8uTIKgxrb4nlDF3SF0++EldXQvQBGkpFZMSnwQiIoDU77tv45VgNkl/L4ouD+rEomujw==}
@@ -2524,7 +2527,14 @@ packages:
     resolution: {integrity: sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==}
     dependencies:
       '@types/jest': 27.5.2
-    dev: false
+    dev: true
+
+  /@types/testing-library__jest-dom/6.0.0:
+    resolution: {integrity: sha512-bnreXCgus6IIadyHNlN/oI5FfX4dWgvGhOPvpr7zzCYDGAPIfvyIoAozMBINmhmsVuqV0cncejF2y5KC7ScqOg==}
+    deprecated: This is a stub types definition. @testing-library/jest-dom provides its own type definitions, so you do not need this installed.
+    dependencies:
+      '@testing-library/jest-dom': 5.17.0
+    dev: true
 
   /@types/trusted-types/2.0.5:
     resolution: {integrity: sha512-I3pkr8j/6tmQtKV/ZzHtuaqYSQvyjGRKH4go60Rr0IDLlFxuRT5V32uvB1mecM5G1EVAUyF/4r4QZ1GHgz+mxA==}
@@ -3000,7 +3010,6 @@ packages:
     resolution: {integrity: sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==}
     dependencies:
       dequal: 2.0.3
-    dev: false
 
   /array-buffer-byte-length/1.0.0:
     resolution: {integrity: sha512-LPuwb2P+NrQw3XhxGc36+XSvuBPopovXYTR9Ew++Du9Yb/bx5AzBfrIsBoj0EZUifjQU+sHL21sseZ3jerWO/A==}
@@ -3552,7 +3561,7 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: false
+    dev: true
 
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -3954,7 +3963,7 @@ packages:
 
   /css.escape/1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
-    dev: false
+    dev: true
 
   /cssdb/7.8.0:
     resolution: {integrity: sha512-SkeezZOQr5AHt9MgJgSFNyiuJwg1p8AwoVln6JwaQJsyxduRW9QJ+HP/gAQzbsz8SIqINtYvpJKjxTRI67zxLg==}
@@ -4182,7 +4191,6 @@ packages:
   /dequal/2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
-    dev: false
 
   /destroy/1.2.0:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
@@ -5675,7 +5683,7 @@ packages:
   /indent-string/4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
-    dev: false
+    dev: true
 
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
@@ -6861,7 +6869,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -6987,7 +6994,7 @@ packages:
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
-    dev: false
+    dev: true
 
   /mini-css-extract-plugin/2.7.6_webpack@5.89.0:
     resolution: {integrity: sha512-Qk7HcgaPkGG6eD77mLvZS1nmxlao3j+9PkrT9Uc7HAE1id3F41+DdBRYRYkbyfNRGzm8/YWtzhw7nVPmwhqTQw==}
@@ -8577,7 +8584,7 @@ packages:
     dependencies:
       indent-string: 4.0.0
       strip-indent: 3.0.0
-    dev: false
+    dev: true
 
   /reflect.getprototypeof/1.0.4:
     resolution: {integrity: sha512-ECkTw8TmJwW60lOTR+ZkODISW6RQ8+2CL3COqtiJKLd6MmB45hN51HprHFziKLGkAuTGQhBb91V8cy+KHlaCjw==}
@@ -9283,7 +9290,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       min-indent: 1.0.1
-    dev: false
+    dev: true
 
   /strip-json-comments/3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
